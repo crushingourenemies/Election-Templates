@@ -60,11 +60,11 @@ A publicly visible Elections template is provided [here](https://docs.google.com
 4. Invalid votes can be invalidated by adding a prefix or suffix to the vote, e.g. "- Candidate's name" instead of "Candidate's name".
 5. It is advisable to inform invalid voters that their vote is invalid in shortly after they cast it, allowing them to correct any errors if possible.
 
-### Instructions for afterward
+## Important Note regarding Private Votes
 
 Because we allow private votes, the entire spreadsheet cannot be published. One can publish anything except the Private Ballots sheet, though it is traditional not to publish the full list of private voters so the Voters sheet should not be published lightly.
 
-After the election is concluded, it is generally advisable to put all private ballots into a folder, to afford future Election Commissions a clean working environment.
+After the election is concluded, it is generally advisable to put all private ballot PMs into a folder, to afford future Election Commissions a clean working environment.
 
 ## Template Results topic OP
 
