@@ -6,6 +6,7 @@ Templates for TNP Elections
 ## Template Nominations topic OP
 
 A Nominations topic OP should include:
+
 1. Instructions for candidates which cover:
     1. what positions are being elected
     2. the eligibility requirements
@@ -19,6 +20,7 @@ ACTUAL TEMPLATE GOES HERE OR ALTERNATIVELY IN SEPARATE FILE
 ## Template Voting topic OP
 
 A Voting topic OP should include:
+
 1. Instructions for voters
     1. what positions are being elected
     2. who the candidates are
@@ -69,6 +71,7 @@ After the election is concluded, it is generally advisable to put all private ba
 TEMPLATE GOES HERE
 
 TEMPLATE SHOULD COVER:
+
 1. optional inclusion of charts from spreadsheet template
 2. vote count table template
 
