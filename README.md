@@ -78,3 +78,7 @@ TEMPLATE SHOULD COVER:
 ## Template unread-PM
 
 You probably received a link to this manual from a PM which was sent to The Voting Booth by the previous election commission and left unread and unfiled.
+
+TEMPLATE unread-PM
+
+If any part of this manual did not meet the needs of you or your Election Commission as a whole, please suggest improvements. The canonical way to do so is via a [pull request](https://help.github.com/articles/using-pull-requests) but if that's not your piece of cake, just PM one of the people who _would_ do that. Any change requested by an Election Commission will be made.
