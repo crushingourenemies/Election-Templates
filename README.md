@@ -47,7 +47,7 @@ Below is a template which covers these questions:
 **Body**:
 
 ```
-[center][big][b]Nominations: @@Month@@ @@Year@@ @@Type@@
+[center][big][b]Nominations: @@Month@@ @@Year@@ @@Type@@[/b][/big]
 
 [img]http://www.thenorthpacific.org/images/ec-seal.png[/img][/center]
 
@@ -85,11 +85,11 @@ Below is a template which covers these matters:
 **Body**:
 
 ```
-[center][big][b]Voting: @@Month@@ @@Year@@ @@Type@@
+[center][big][b]Voting: @@Month@@ @@Year@@ @@Type@@[/b][/big]
 
 [img]http://www.thenorthpacific.org/images/ec-seal.png[/img][/center]
 
-Voting [[is open]][[opens at (time=@@VotingOpen@@)]] in this @@Type@@ election. Voting will be from (time=@@VotingOpen) to (time=@@VotingEnd), and only ballots submitted during that time will be counted. Voters are asked to use the below voting form:
+Voting [[is open]][[opens at (time=@@VotingOpen@@)]] in this @@Type@@ election. Voting will be from (time=@@VotingOpen@@) to (time=@@VotingEnd@@), and only ballots submitted during that time will be counted. Voters are asked to use the below voting form:
 
 [code][b]TNP Nation[/b]: NATION GOES HERE
 
@@ -97,15 +97,15 @@ Voting [[is open]][[opens at (time=@@VotingOpen@@)]] in this @@Type@@ election. 
 
 [[[b]Vice Delegate[/b]: < @@Candidates@@ >]]
 
-[[[b]Speaker[/b]: < @@Candidates >]]
+[[[b]Speaker[/b]: < @@Candidates@@ >]]
 
-[[[b]Justice [[1]][/b]: < @@Candidates >]]
+[[[b]Justice [[1]][/b]: < @@Candidates@@ >]]
 
-[[[b]Justice 2[/b]: < @@Candidates >]]
+[[[b]Justice 2[/b]: < @@Candidates@@ >]]
 
-[[[b]Justice 3[/b]: < @@Candidates >]]
+[[[b]Justice 3[/b]: < @@Candidates@@ >]]
 
-[[[b]Attorney General[/b]: < @@Candidates >]][/code]
+[[[b]Attorney General[/b]: < @@Candidates@@ >]][/code]
 
 [[[center][b][big][color=red]Abstain is a candidate in this election.  If you wish to abstain from voting you must use the option of PRESENT.[/color][/big][/b][/center]]]
 
@@ -168,7 +168,7 @@ Below is a template which covers these questions:
 **Body**:
 
 ```
-[center][big][b]Results: @@Month@@ @@Year@@ @@Type@@
+[center][big][b]Results: @@Month@@ @@Year@@ @@Type@@[/b][/big]
 
 [img]http://www.thenorthpacific.org/images/ec-seal.png[/img][/center]
 
@@ -176,11 +176,11 @@ The Election Commission has counted the votes in this @@Month@@ @@Year@@ @@Type@
 
 [[[center][img]@@ChartURL@@[/img][/center]]]
 
-[[[table=4,Delegate, 1]Candidates[c]Votes[c]Percentage[c]Win?[c]@@CandidateVotes[/table]]]
-[[[table=4,Vice Delegate, 1]Candidates[c]Votes[c]Percentage[c]Win?[c]@@CandidateVotes[/table]]]
-[[[table=4,Speaker, 1]Candidates[c]Votes[c]Percentage[c]Win?[c]@@CandidateVotes[/table]]]
-[[[table=4,Justice, 1]Candidates[c]Votes[c]Percentage[c]Win?[c]@@CandidateVotes[/table]]]
-[[[table=4,Attorney General, 1]Candidates[c]Votes[c]Percentage[c]Win?[c]@@CandidateVotes[/table]]]
+[[[table=4,Delegate, 1]Candidates[c]Votes[c]Percentage[c]Win?[c]@@CandidateVotes@@[/table]]]
+[[[table=4,Vice Delegate, 1]Candidates[c]Votes[c]Percentage[c]Win?[c]@@CandidateVotes@@[/table]]]
+[[[table=4,Speaker, 1]Candidates[c]Votes[c]Percentage[c]Win?[c]@@CandidateVotes@@[/table]]]
+[[[table=4,Justice, 1]Candidates[c]Votes[c]Percentage[c]Win?[c]@@CandidateVotes@@[/table]]]
+[[[table=4,Attorney General, 1]Candidates[c]Votes[c]Percentage[c]Win?[c]@@CandidateVotes@@[/table]]]
 
 ```
 
