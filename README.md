@@ -43,6 +43,7 @@ A Nominations topic OP should include:
 Below is a template which covers these questions:
 
 **Title**: Nominations: @@Month@@ @@Year@@ @@Type@@ 
+
 **Body**:
 
 ```
@@ -65,7 +66,7 @@ This topic is intended for nominations and may not be used for campaigning. Plea
 ```
 
 The nominations topic should be pinned.
-
+ 
 ## Template Voting topic OP
 
 A Voting topic OP should include:
@@ -80,6 +81,7 @@ A Voting topic OP should include:
 Below is a template which covers these matters:
 
 **Title**: Voting: @@Month@@ @@Year@@ @@Type@@ 
+
 **Body**:
 
 ```
@@ -186,8 +188,19 @@ The results topic should not be pinned.
 
 ## Template unread-PM
 
-You probably received a link to this manual from a PM which was sent to The Voting Booth by the previous election commission and left unread and unfiled.
+You probably received a link to this manual from a PM which was sent to The Voting Booth by the previous election commission and left unread and unfiled. Please send a PM of the same kind to the next Election Commission:
 
-TEMPLATE unread-PM
+**Title**: A Note to our Successors
+
+**Body**:
+```
+To whomever next takes this solemn duty,
+
+It has been our experience that the operation of elections in The North Pacific requires great care to avoid being unfair in one direction or another and ensure democracy functions. To assist future Election Commissions in taking such appropriate care, we pass on a set of [url=https://github.com/The-North-Pacific/Election-Templates]Templates[/url] and instructions. We recommend that as your first act, you adopt the protocol that actions following these instructions may be taken by any Election Commissioner individually (to save time) but any deviation from them should be voted on (to reduce the risk of error).
+
+The very best of luck,
+You just might need it,
+~The Previous Election Commission
+```
 
 If any part of this manual did not meet the needs of you or your Election Commission as a whole, please suggest improvements. The canonical way to do so is via a [pull request](https://help.github.com/articles/using-pull-requests) but if that's not your piece of cake, just PM one of the people who _would_ do that. Any change requested by an Election Commission will be made.
