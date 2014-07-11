@@ -9,23 +9,23 @@ In all the below templates, a word surrounded by double @ signs i.e. @@General@@
 2. Position: One of "Delegate", "Vice Delegate", "Speaker", "Justice", or "Attorney General".
 3. Month: the month during which the election begins.
 4. Year: the year during which the election begins.
-4. ShortLabel: For a scheduled election, the Month. For a special election, "Special Election".
-5. NextSched: the month of the next scheduled election for the position(s) being elected.
-6. EligibilityDate: the date one must have joined the Regional Assembly by to be eligible to run in the election (15 days before nominations are opened).
-7. TermLimitedDelegate: a name or list of names of persons ineligible to run for Delegate due to term limitations.
-8. CandidaciesOpen: the time candidacy declarations open as a UNIX timestamp (number of seconds since January 1st 1970, GMT). Determinable using [a tool](http://www.timestampgenerator.com/).
-9. CandidaciesClose: the time candidacy declarations close as a UNIX timestamp.
-10. VotingOpen: the time voting opens as a UNIX timestamp.
-11. VotingClose: the time voting closes as a UNIX timestamp.
-12. Eligible: the list of persons eligible to run for at least one of the positions.
-13. NomCandidates: the list of valid candidates, each prefixed by [*] to itemize.
-14. Nominees: the list of persons nominated who are eligible but have not accepted nomination, each prefixed by [*] to itemize.
-15. DeclinedNominees: the list of persons nominated who are eligible but have declined the nomination.
-16. InvalidNominees: the list of persons nominated who are ineligible to run.
-17. Candidates: the list of candidates followed by "Abstain" or "Present" if Abstain is a candidate in this election, separated by " | ".
-18. ChartURL: The URL of a pie chart image for election results, obtainable from an election counting spreadsheet..
-19. CandidateVotes: the row in the results sheet's appropriate table for the candidate, prefixed by "[c]", for each candidate, concatenated.
-20. ElectionCommissioners: the list of Election Commissioners, separated by ", ".
+5. ShortLabel: For a scheduled election, the Month. For a special election, "Special Election".
+6. NextSched: the month of the next scheduled election for the position(s) being elected.
+7. EligibilityDate: the date one must have joined the Regional Assembly by to be eligible to run in the election (15 days before nominations are opened).
+8. TermLimitedDelegate: a name or list of names of persons ineligible to run for Delegate due to term limitations.
+9. CandidaciesOpen: the time candidacy declarations open as a UNIX timestamp (number of seconds since January 1st 1970, GMT). Determinable using [a tool](http://www.timestampgenerator.com/).
+10. CandidaciesClose: the time candidacy declarations close as a UNIX timestamp.
+11. VotingOpen: the time voting opens as a UNIX timestamp.
+12. VotingClose: the time voting closes as a UNIX timestamp.
+13. Eligible: the list of persons eligible to run for at least one of the positions.
+14. NomCandidates: the list of valid candidates, each prefixed by [*] to itemize.
+15. Nominees: the list of persons nominated who are eligible but have not accepted nomination, each prefixed by [*] to itemize.
+16. DeclinedNominees: the list of persons nominated who are eligible but have declined the nomination.
+17. InvalidNominees: the list of persons nominated who are ineligible to run.
+18. Candidates: the list of candidates followed by "Abstain" or "Present" if Abstain is a candidate in this election, separated by " | ".
+19. ChartURL: The URL of a pie chart image for election results, obtainable from an election counting spreadsheet..
+20. CandidateVotes: the row in the results sheet's appropriate table for the candidate, prefixed by "[c]", for each candidate, concatenated.
+21. ElectionCommissioners: the list of Election Commissioners, separated by ", ".
 
 Any segment of a template which is enclosed in double square brackets i.e. [[[or not]] is understood to be excluded if unnecessary for the particular election.
 
@@ -34,12 +34,12 @@ Any segment of a template which is enclosed in double square brackets i.e. [[[or
 A Candidacy Declarations topic OP should include:
 
 1. Instructions for candidates which cover:
-    1. what positions are being elected
-    2. the eligibility requirements
-    3. how to make a nomination, accept one, or declare candidacy
-    4. when the deadline for acceptance of nominations and candidacy declarations is
-2. Optionally, a list of eligible members (Regional Assembly members who have been in the Regional Assembly since 15 days ago at the latest)
-3. An easily readable listing of candidates and/or nominees
+    1. what positions are being elected;
+    2. the eligibility requirements;
+    3. how to make a nomination, accept one, or declare candidacy;
+    4. when the deadline for acceptance of nominations and candidacy declarations is.
+2. Optionally, a list of eligible members (Regional Assembly members who have been in the Regional Assembly since 15 days ago at the latest).
+3. An easily readable listing of candidates and/or nominees.
 
 Below is a template which covers these questions:
 
@@ -52,7 +52,7 @@ Below is a template which covers these questions:
 
 [img]http://www.thenorthpacific.org/images/ec-seal.png[/img][/center]
 
-This @@Label@@, The North Pacific will be electing [[a Delegate,]] [[a]] [[Vice Delegate,]] [[and]] [[Speaker,]] [[#]][[a]] [[Justice]][[s]][[,]] [[and]] [[an Attorney General]] to serve until the next election in [[NextSched]]. Any Regional Assembly member who has been a member for the last 15 days (since @@EligibilityDate@@) is eligible to run for these offices [[excepting that @@TermLimitedDelegate@@ is unable to run for Delegate due to term limitations]], and eligible members may run for more than one of these offices if they so wish. Loss of Regional Assembly membership before the conclusion of this election will also result in loss of eligibility to run for any office during this election. A list of those eligible to run is provided below.
+This @@Label@@, The North Pacific will be electing [[a Delegate,]] [[a]] [[Vice Delegate,]] [[and]] [[Speaker,]] [[#]][[a]] [[Justice]][[s]][[,]] [[and]] [[an Attorney General]] to serve until the next election in [[NextSched]]. Any Regional Assembly member who has been a member for the last 15 days (since @@EligibilityDate@@) is eligible to run for these offices [[excepting that @@TermLimitedDelegate@@ is unable to run for Delegate due to term limitations]], and eligible members may run for more than one of these offices if they so wish. Loss of Regional Assembly membership before the conclusion of this election will also result in loss of eligibility to run for any office during this election. [[A list of those eligible to run is provided below.]]
 
 To run, one must either accept a nomination or declare candidacy [u]in this thread[/u]. To withdraw from running, one must post a withdrawal of candidacy in [u]this thread[/u]. 
 
@@ -114,11 +114,11 @@ Voters must use the following voting form:
 
 [[[b]Attorney General[/b]: < @@Candidates@@ >]][/code]
 
-[[[center][b][big][color=red]Abstain is a candidate in this election.  If you wish to abstain from voting you must use the option of PRESENT.[/color][/big][/b][/center]]]
+[[[b][color=red]Abstain is a candidate in this election. If you wish to abstain from voting you must use the option of PRESENT.[/color][/b]]]
 
 Voters may submit their ballots either publicly by a post in this thread, or through personal message to [url=http://forum.thenorthpacific.org/msg/?c=2&mid=197430]The Voting Booth[/url]. Ballots not submitted according to these guidelines are invalid. Ambiguous votes are invalid.
 
-[b][color=red]Election Commissioners to announce private votes in the voting thread, including the candidate(s) the vote was cast for, promptly after those votes are cast. For this reason, voters are discouraged from announcing, as was custom, that they have voted privately, as the subsequent public declaration by the Election Commissioners can potentially reveal how they voted.[/color][/b]
+[b][color=red]Election Commissioners are required by law to announce private votes in the voting thread, including the candidate(s) the vote was cast for, promptly after those votes are cast. For this reason, voters are discouraged from announcing, as was custom, that they have voted privately, as the subsequent public declaration by the Election Commissioners can potentially reveal how they voted.[/color][/b]
 
 Please do not post anything other than your ballot in this thread. If you have any questions please send them directly to [url=http://forum.thenorthpacific.org/msg/?c=2&mid=197430]The Voting Booth[/url] or start a new thread. Additional and unnecessary comments will be removed.
 
@@ -198,7 +198,7 @@ The Election Commission has counted the votes in this @@Month@@ @@Year@@ @@Type@
 [i]Election Commissioners: @@ElectionCommissioners@@[/i]
 ```
 
-The results topic should not be pinned.
+The results topic should be pinned.
 
 ## Template unread-PM
 
