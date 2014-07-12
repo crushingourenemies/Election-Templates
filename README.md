@@ -77,11 +77,11 @@ The candidacy declarations topic should be pinned.
 A Voting topic OP should include:
 
 1. Instructions for voters
-    1. what positions are being elected
-    2. who the candidates are
-    3. how to vote (by post and/or by PM)
-    4. when the deadline for voting is
-2. a ballot template
+    1. what positions are being elected;
+    2. who the candidates are;
+    3. how to vote (by post and/or by PM);
+    4. when the deadline for voting is.
+2. A ballot template.
 
 Below is a template which covers these matters:
 
@@ -103,16 +103,17 @@ Voters must use the following voting form:
 [code][[[b]Delegate:[/b] < @@Candidates@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Vice Delegate:[/b]: < @@Candidates@@ >]]
+[[[b]Vice Delegate:[/b] < @@Candidates@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Speaker:[/b]: < @@Candidates@@ >]]
+[[[b]Speaker:[/b] < @@Candidates@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Court Justice (select 3) [[1]][/b]: < @@Candidates@@ >]]
+[[[b]Court Justice [[(select 3)]]:][/b] < @@Candidates@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Attorney General[/b]: < @@Candidates@@ >]][/code]
+[[[b]Attorney General:[/b] < @@Candidates@@ >]]
+[[[b]Would you like to reopen nominations?[/b] < Yes | No >]][/code]
 
 [[[b][color=red]Abstain is a candidate in this election. If you wish to abstain from voting you must use the option of PRESENT.[/color][/b]]]
 
@@ -129,7 +130,7 @@ The voting topic should be pinned.
 
 ## Counting spreadsheet template
 
-A publicly visible Elections template is provided [here](https://docs.google.com/spreadsheet/ccc?key=0AqCj7Gv_2W_MdEhuNzctQ0xqWXhwdmNaN0QxQXNMYkE#gid=0)
+A publicly visible Elections template is provided [here](https://docs.google.com/spreadsheet/ccc?key=0AsyHPhL33zwvdEhaS2J6QTZTZ3JoRnRlRnF5OEh5a1E#gid=0)
 
 ### Instructions for cloning
 
@@ -138,28 +139,22 @@ A publicly visible Elections template is provided [here](https://docs.google.com
 3. To update the copy of the template for the current election:
     1. Remove the charts in the Results sheet for all positions which are not being elected (click on the chart, then click on the drop down menu in the upper right hand corner of the chart and select "Delete chart")
     2. Remove the columns in the Results sheet for all positions which are not being elected (select the columns by clicking on the column label of the first and dragging across to the last, then click the drop down menu at the right end of the column labels and select "Delete columns *Letter* - *Letter*"
-    3. Update the date voting begins in cell Voters!G3
-    4. (optional) Update the conditional formatting of the "Date Joined" column
-    5. Update the set of candidates in the Results sheet.
-    6. If more candidates are needed than there are spaces, the macros under the **Percentage** and **Win?** columns will need to be updated by extending the range they apply to. The range deliberately excludes the row for abstentions.
-4. After setting things up, it is advisable (though not required) to set the verification scripts which check the list of TNP nations and the dates members joined the RA to run automatically. To do this:
-    1. Enter the script editor by clicking the Tools menu at the top and selecting "Script editor..."
-    2. Open the Triggers dialog by clicking the Resources menu at the top of the script editor and selecting "Current project's triggers"
-    3. Click the link to add a trigger in the Triggers dialog.
-    4. The default trigger should specify the verify\_all function, on a event "From Spreadsheet" which is "On open". If it does not, update the fields to call the verify\_all function whenever the document is opened, as above.
-    5. Save the trigger by clicking the Save button.
+    3. Update the set of candidates in the Results sheet.
+    4. If more candidates are needed than there are spaces, the macros under the **Percentage** and **Win?** columns will need to be updated by extending the range they apply to. The range deliberately excludes the row for abstentions.
 
 ### Instructions for counting
 
-1. For every public vote, one can enter the voter's forum name, their TNP nation, and their votes (as well as any notes if needed) in the Public Ballots sheet in the appropriate columns.
-2. For every private vote, one can do the same in the Private Ballots sheet. (The Private Ballots sheet must _never_ be published).
+1. For every public vote, one can enter the voter's forum name, a link to their ballot, and their votes (as well as any notes if needed) in the Ballots sheet in the appropriate columns.
+2. For every private vote, one can do the same in the Ballots sheet, but exclude the voter's forum name. The names of private voters may _never_ be published.
 3. Check the Voters sheet for invalid votes.
-4. Invalid votes can be invalidated by adding a prefix or suffix to the vote, e.g. "- Candidate's name" instead of "Candidate's name".
+4. Invalid votes can be invalidated by deleting the votes choices and turning their background color to red.
 5. It is advisable to inform invalid voters that their vote is invalid in shortly after they cast it, allowing them to correct any errors if possible.
 
 ## Important Note regarding Private Votes
 
-Because we allow private votes, the entire spreadsheet cannot be published. One can publish anything except the Private Ballots sheet, though it is traditional not to publish the full list of private voters so the Voters sheet should not be published lightly.
+It is important to make sure that the published spreadsheet:
+1. Lists all private votes.
+2. Does _not_ list the names of the corresponding voters.
 
 After the election is concluded, it is generally advisable to put all private ballot PMs into a folder, to afford future Election Commissions a clean working environment.
 
@@ -167,11 +162,11 @@ After the election is concluded, it is generally advisable to put all private ba
 
 A Results post must cover:
 
-1. That the votes have been counted
-2. How many votes were counted for each candidate, and how many abstained
+1. That the votes have been counted.
+2. How many votes were counted for each candidate, and how many abstained.
 3. Which publicly posted votes were invalid, if any (this can be addressed by inserting a note using the BBCode [note] tag following the affected total, or by adding a separate paragraph).
-4. Who, if anyone, is elected to which position
-5. Whether a runoff will be held
+4. Who, if anyone, is elected to which position.
+5. Whether a runoff will be held.
 
 Below is a template which covers these questions:
 
