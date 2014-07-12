@@ -153,6 +153,7 @@ A publicly visible Elections template is provided [here](https://docs.google.com
 ## Important Note regarding Private Votes
 
 It is important to make sure that the published spreadsheet:
+
 1. Lists all private votes.
 2. Does _not_ list the names of the corresponding voters.
 
