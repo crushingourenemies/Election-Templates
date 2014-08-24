@@ -130,7 +130,7 @@ The voting topic should be pinned.
 
 ## Counting spreadsheet template
 
-A publicly visible Elections template is provided [here](https://docs.google.com/spreadsheet/ccc?key=0AsyHPhL33zwvdEhaS2J6QTZTZ3JoRnRlRnF5OEh5a1E#gid=0)
+A publicly visible Elections template is provided [here](https://docs.google.com/spreadsheet/ccc?key=0AsyHPhL33zwvdEhaS2J6QTZTZ3JoRnRlRnF5OEh5a1E#gid=0).
 
 ### Instructions for cloning
 
@@ -138,7 +138,7 @@ A publicly visible Elections template is provided [here](https://docs.google.com
 2. It is generally advisable to share the counting sheet with all Election Commissioners.
 3. To update the copy of the template for the current election:
     1. Remove the charts in the Results sheet for all positions which are not being elected (click on the chart, then click on the drop down menu in the upper right hand corner of the chart and select "Delete chart")
-    2. Remove the columns in the Results sheet for all positions which are not being elected (select the columns by clicking on the column label of the first and dragging across to the last, then click the drop down menu at the right end of the column labels and select "Delete columns *Letter* - *Letter*"
+    2. Remove the columns in the Ballots sheet for all positions which are not being elected (select the columns by clicking on the column label of the first and dragging across to the last, then click the drop down menu at the right end of the column labels and select "Delete columns *Letter* - *Letter*"
     3. Update the set of candidates in the Results sheet.
     4. If more candidates are needed than there are spaces, the macros under the **Percentage** and **Win?** columns will need to be updated by extending the range they apply to. The range deliberately excludes the row for abstentions.
 
@@ -146,7 +146,7 @@ A publicly visible Elections template is provided [here](https://docs.google.com
 
 1. For every public vote, one can enter the voter's forum name, a link to their ballot, and their votes (as well as any notes if needed) in the Ballots sheet in the appropriate columns.
 2. For every private vote, one can do the same in the Ballots sheet, but exclude the voter's forum name. The names of private voters may _never_ be published.
-3. Check the Voters sheet for invalid votes.
+3. Check the Ballots sheet for invalid votes. One (but not the only) reason why a vote may be invalid is because the person who cast it is no longer an eligible voter. Eligible voters are those that remain Regional Assembly members throughout _the entire time_ the vote is open. Regional Assembly membership records can be checked using the official [Regional Assembly / Citizen Registry](https://docs.google.com/spreadsheet/ccc?key=0AjUCYljFPq3CdEtwc19aNTZJMWszeWhrcm1tOFdLcWc#gid=0).
 4. Invalid votes can be invalidated by deleting the votes choices and turning their background color to red.
 5. It is advisable to inform invalid voters that their vote is invalid in shortly after they cast it, allowing them to correct any errors if possible.
 
@@ -183,11 +183,11 @@ The Election Commission has counted the votes in this @@Month@@ @@Year@@ @@Type@
 
 [[[center][img]@@ChartURL@@[/img][/center]]]
 
-[[[table=4,Delegate, 1]Candidates[c]Votes[c]Elected[/table]]]
-[[[table=4,Vice Delegate, 1]Candidates[c]Votes[c]Elected[/table]]]
-[[[table=4,Speaker, 1]Candidates[c]Votes[c]Elected[/table]]]
-[[[table=4,Court Justice, 1]Candidates[c]Votes[c]Elected[/table]]]
-[[[table=4,Attorney General, 1]Candidates[c]Votes[c]Elected[/table]]]
+[[[table=3,Delegate, 1]Candidates[c]Votes[c]Elected[/table]]]
+[[[table=3,Vice Delegate, 1]Candidates[c]Votes[c]Elected[/table]]]
+[[[table=3,Speaker, 1]Candidates[c]Votes[c]Elected[/table]]]
+[[[table=3,Court Justice, 1]Candidates[c]Votes[c]Elected[/table]]]
+[[[table=3,Attorney General, 1]Candidates[c]Votes[c]Elected[/table]]]
 
 [[A detailed breakdown of votes and results can be found in [url=@@SpreadsheetLink@@]this spreadsheet[/url].]]
 
@@ -200,16 +200,15 @@ The results topic should be pinned.
 
 You probably received a link to this manual from a PM which was sent to The Voting Booth by the previous election commission and left unread and unfiled. Please send a PM of the same kind to the next Election Commission:
 
-**Title**: A Note to our Successors
+**Title**: A Note to our successor Election Commission
 
 **Body**:
 ```
-To whomever next takes this solemn duty,
+To the next Election Commission,
 
 It has been our experience that the operation of elections in The North Pacific requires great care to avoid being unfair in one direction or another and ensure democracy functions. To assist future Election Commissions in taking such appropriate care, we pass on a set of [url=https://github.com/The-North-Pacific/Election-Templates]Templates[/url] and instructions. We recommend that as your first act, you adopt the protocol that actions following these instructions may be taken by any Election Commissioner individually (to save time) but any deviation from them should be voted on (to reduce the risk of error).
 
-The very best of luck,
-You just might need it,
+Regards,
 ~The Previous Election Commission
 ```
 
