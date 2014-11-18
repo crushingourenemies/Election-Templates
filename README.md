@@ -95,7 +95,7 @@ Below is a template which covers these matters:
 
 [img]http://www.thenorthpacific.org/images/ec-seal.png[/img][/center]
 
-Voting [[is now open]][[opens at (time=@@VotingOpen@@)]] in this @@Label@@. Voting will be from (time=@@VotingOpen@@) (your forum time) to (time=@@VotingEnd@@) (your forum time), and ballots submitted outside that time are invalid. 
+Voting [[is now open]][[opens at (time=@@VotingOpen@@)]] in this @@Type@@. Voting will be from (time=@@VotingOpen@@) (your forum time) to (time=@@VotingEnd@@) (your forum time), and ballots submitted outside that time are invalid. 
 
 Everyone who is a Regional Assembly member at the time voting opens is eligible to vote. Loss of Regional Assembly membership before the close of voting also results in loss of eligibility to vote.
 
@@ -226,7 +226,7 @@ Below is a template which covers these questions:
 
 [img]http://www.thenorthpacific.org/images/ec-seal.png[/img][/center]
 
-The Election Commission has counted the votes in this @@Label@@ and now publishes these results, attesting they are true and correct.
+The Election Commission has counted the votes in this @@Type@@ and now publishes these results, attesting they are true and correct.
 
 [[[center][img]@@ChartURL@@[/img][/center]]]
 
