@@ -9,7 +9,7 @@ In all the below templates, a word surrounded by double @ signs i.e. @@General@@
 2. Position: One of "Delegate", "Vice Delegate", "Speaker", "Justice", or "Attorney General".
 3. Month: the month during which the election begins.
 4. Year: the year during which the election begins.
-5. ShortLabel: For a scheduled election, the Month. For a special election, "Special Election".
+5. Label: For a scheduled election, the Month. For a special election, "Special Election".
 6. NextSched: the month of the next scheduled election for the position(s) being elected.
 7. EligibilityDate: the date one must have joined the Regional Assembly by to be eligible to run in the election (15 days before nominations are opened).
 8. TermLimitedDelegate: a name or list of names of persons ineligible to run for Delegate due to term limitations.
@@ -23,9 +23,10 @@ In all the below templates, a word surrounded by double @ signs i.e. @@General@@
 16. DeclinedNominees: the list of persons nominated who are eligible but have declined the nomination.
 17. InvalidNominees: the list of persons nominated who are ineligible to run.
 18. Candidates: the list of candidates followed by "Abstain" or "Present" if Abstain is a candidate in this election, separated by " | ".
-19. ChartURL: The URL of a pie chart image for election results, obtainable from an election counting spreadsheet..
+19. ChartURL: The URL of a pie chart image for election results, obtainable from an election counting spreadsheet.
 20. CandidateVotes: the row in the results sheet's appropriate table for the candidate, prefixed by "[c]", for each candidate, concatenated.
 21. ElectionCommissioners: the list of Election Commissioners, separated by ", ".
+22. VotingURL: The URL of the Voting topic.
 
 Any segment of a template which is enclosed in double square brackets i.e. [[[or not]] is understood to be excluded if unnecessary for the particular election.
 
@@ -94,7 +95,7 @@ Below is a template which covers these matters:
 
 [img]http://www.thenorthpacific.org/images/ec-seal.png[/img][/center]
 
-Voting [[is now open]][[opens at (time=@@VotingOpen@@)]] in this @@Type@@ election. Voting will be from (time=@@VotingOpen@@) (your forum time) to (time=@@VotingEnd@@) (your forum time), and ballots submitted outside that time are invalid. 
+Voting [[is now open]][[opens at (time=@@VotingOpen@@)]] in this @@Type@@. Voting will be from (time=@@VotingOpen@@) (your forum time) to (time=@@VotingEnd@@) (your forum time), and ballots submitted outside that time are invalid. 
 
 Everyone who is a Regional Assembly member at the time voting opens is eligible to vote. Loss of Regional Assembly membership before the close of voting also results in loss of eligibility to vote.
 
@@ -128,7 +129,53 @@ Please do not post anything other than your ballot in this thread. If you have a
 
 The voting topic should be pinned.
 
-## Counting spreadsheet template
+## Template private ballot announcement post
+
+The Election Commission is required to announce all private ballots in the Voting topic in a timely manner. It is recommended that each such ballot is announced in a separate post, to facilitate counting. Below is a template that can be used for such posts:
+
+```
+Private ballot:
+[quote][[[b]Delegate:[/b] < @@Candidates@@ >]]
+[[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
+
+[[[b]Vice Delegate:[/b] < @@Candidates@@ >]]
+[[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
+
+[[[b]Speaker:[/b] < @@Candidates@@ >]]
+[[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
+
+[[[b]Court Justice [[(select 3)]]:][/b] < @@Candidates@@ >]]
+[[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
+
+[[[b]Attorney General:[/b] < @@Candidates@@ >]]
+[[[b]Would you like to reopen nominations?[/b] < Yes | No >]][/quote]
+```
+
+The ballot format should match the one included in the Voting topic, and the vote options _must_ match those of the private ballot.
+
+## Template vote reminder PM and telegram
+
+It is recommended that Election Commissioners send a PM and a telegram to all members of the Regional Assembly eligible to vote when voting begins, encouraging them to cast their ballots. Below is a template that can be used for this purpose:
+
+**Title**: A reminder to vote
+
+**Body**:
+```
+Hi there!
+
+This is a reminder that the  @@Month@@ @@Year@@ @@Type@@ is currently underway. Voting has begun on (time=@@VotingOpen@@) (your forum time) and will continue until (time=@@VotingEnd@@) (your forum time).
+
+If you have not already voted, the Election Commission would like to encourage you to visit the following thread and submit your ballot:
+
+[b]@@Voting URL[/b]
+
+The more votes, the stronger democracy is in The North Pacific. Thank you for voting!
+
+Regards,
+~The Election Commission
+```
+
+## Template counting spreadsheet
 
 A publicly visible Elections template is provided [here](https://docs.google.com/spreadsheet/ccc?key=0AsyHPhL33zwvdEhaS2J6QTZTZ3JoRnRlRnF5OEh5a1E#gid=0).
 
@@ -145,7 +192,7 @@ A publicly visible Elections template is provided [here](https://docs.google.com
 ### Instructions for counting
 
 1. For every public vote, one can enter the voter's forum name, a link to their ballot, and their votes (as well as any notes if needed) in the Ballots sheet in the appropriate columns.
-2. For every private vote, one can do the same in the Ballots sheet, but exclude the voter's forum name. The names of private voters may _never_ be published.
+2. For every private vote, one can do the same in the Ballots sheet, but exclude the voter's forum name. The names of private voters may _never_ be published. In this case, the link should be to the post where the private ballot was announced by the Election Commissioners.
 3. Check the Ballots sheet for invalid votes. A vote may be invalid because the person who cast it  was not or is no longer an eligible voter. Eligible voters are those that are Regional Assembly members throughout _the entire time_ the vote is open. Ways to confirm this include checking that voters are in the Regional Assembly usergroup as they vote, as well as checking against the official [Regional Assembly / Citizen Registry](https://docs.google.com/spreadsheet/ccc?key=0AjUCYljFPq3CdEtwc19aNTZJMWszeWhrcm1tOFdLcWc#gid=0) maintained by the Speaker's Office. It is important to keep in mind that Regional Assembly membership status changes take effect the moment they are announced by the Speaker's Office. For this reason, ultimately, Regional Assembly membership status can be definitively verified only by tracking recent Regional Assembly [admissions](http://forum.thenorthpacific.org/topic/6923980/1/) and [removals](http://forum.thenorthpacific.org/topic/6917173/1/).
 4. Invalid votes can be invalidated by deleting the votes choices and turning their background color to red.
 5. It is advisable to inform invalid voters that their vote is invalid in shortly after they cast it, allowing them to correct any errors if possible.
@@ -165,7 +212,7 @@ A Results post must cover:
 
 1. That the votes have been counted.
 2. How many votes were counted for each candidate, and how many abstained.
-3. Which publicly posted votes were invalid, if any (this can be addressed by inserting a note using the BBCode [note] tag following the affected total, or by adding a separate paragraph).
+3. Which publicly posted votes (including private ballots announced by Election Commissioners in an anonymized manner) were invalid, if any (this can be addressed by inserting a note using the BBCode [note] tag following the affected total, or by adding a separate paragraph).
 4. Who, if anyone, is elected to which position.
 5. Whether a runoff will be held.
 
@@ -179,7 +226,7 @@ Below is a template which covers these questions:
 
 [img]http://www.thenorthpacific.org/images/ec-seal.png[/img][/center]
 
-The Election Commission has counted the votes in this @@Month@@ @@Year@@ @@Type@@ and now publishes these results, attesting they are true and correct.
+The Election Commission has counted the votes in this @@Type@@ and now publishes these results, attesting they are true and correct.
 
 [[[center][img]@@ChartURL@@[/img][/center]]]
 
@@ -198,9 +245,9 @@ The results topic should be pinned.
 
 ## Template unread-PM
 
-You probably received a link to this manual from a PM which was sent to The Voting Booth by the previous election commission and left unread and unfiled. Please send a PM of the same kind to the next Election Commission:
+You probably received a link to this manual from a PM which was sent to The Voting Booth by the previous election commission and left unread and unfiled. It is recommended that you send a PM of the same kind to the next Election Commission:
 
-**Title**: A Note to our successor Election Commission
+**Title**: A note to our successor Election Commission
 
 **Body**:
 ```
