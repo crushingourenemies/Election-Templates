@@ -177,17 +177,16 @@ Regards,
 
 ## Template counting spreadsheet
 
-A publicly visible Elections template is provided [here](https://docs.google.com/spreadsheet/ccc?key=0AsyHPhL33zwvdEhaS2J6QTZTZ3JoRnRlRnF5OEh5a1E#gid=0).
+A publicly visible Elections template is provided [here](https://docs.google.com/spreadsheets/d/1tZ4jLz6Qcjtv_bWZSMVTgnqv1CZErog4KDq7uMl0uy8/).
 
 ### Instructions for cloning
 
 1. You can copy the counting template by opening it, clicking the File menu in the upper left hand corner, and clicking "Make a copy..."
 2. It is generally advisable to share the counting sheet with all Election Commissioners.
 3. To update the copy of the template for the current election:
-    1. Remove the charts in the Results sheet for all positions which are not being elected (click on the chart, then click on the drop down menu in the upper right hand corner of the chart and select "Delete chart")
-    2. Remove the columns in the Ballots sheet for all positions which are not being elected (select the columns by clicking on the column label of the first and dragging across to the last, then click the drop down menu at the right end of the column labels and select "Delete columns *Letter* - *Letter*"
+    2. Remove the sheets for other types of elections (click the triangle next to the sheet name, then click Delete). 
     3. Update the set of candidates in the Results sheet.
-    4. If more candidates are needed than there are spaces, the macros under the **Percentage** and **Win?** columns will need to be updated by extending the range they apply to. The range deliberately excludes the row for abstentions.
+    4. If more candidates are needed than there are spaces, the macros will need to be adjusted. 
 
 ### Instructions for counting
 
