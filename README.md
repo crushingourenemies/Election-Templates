@@ -11,7 +11,7 @@ In all the below templates, a word surrounded by double @ signs i.e. @@General@@
 4. Year: the year during which the election begins.
 5. Label: For a scheduled election, the Month. For a special election, "Special Election".
 6. NextSched: the month of the next scheduled election for the position(s) being elected.
-7. EligibilityDate: the date one must have joined the Regional Assembly by to be eligible to run in the election (15 days before nominations are opened).
+7. EligibilityDate: the date one must have joined the Regional Assembly / become a Citizen by to be eligible to run in the election (15 days before nominations are opened).
 8. TermLimitedDelegate: a name or list of names of persons ineligible to run for Delegate due to term limitations.
 9. CandidaciesOpen: the time candidacy declarations open as a UNIX timestamp (number of seconds since January 1st 1970, GMT). Determinable using [a tool](http://www.timestampgenerator.com/).
 10. CandidaciesClose: the time candidacy declarations close as a UNIX timestamp.
@@ -39,7 +39,7 @@ A Candidacy Declarations topic OP should include:
     2. the eligibility requirements;
     3. how to make a nomination, accept one, or declare candidacy;
     4. when the deadline for acceptance of nominations and candidacy declarations is.
-2. Optionally, a list of eligible members (Regional Assembly members who have been in the Regional Assembly since 15 days ago at the latest).
+2. Optionally, a list of eligible members (Citizens who have been Citizens since 15 days ago at the latest).
 3. An easily readable listing of candidates and/or nominees.
 
 Below is a template which covers these questions:
@@ -53,7 +53,7 @@ Below is a template which covers these questions:
 
 [img]http://www.thenorthpacific.org/images/ec-seal.png[/img][/center]
 
-This @@Label@@, The North Pacific will be electing [[a Delegate,]] [[a]] [[Vice Delegate,]] [[and]] [[Speaker,]] [[#]][[a]] [[Justice]][[s]][[,]] [[and]] [[an Attorney General]] to serve until the next election in [[NextSched]]. Any Regional Assembly member who has been a member for the last 15 days (since @@EligibilityDate@@) is eligible to run for these offices [[excepting that @@TermLimitedDelegate@@ is unable to run for Delegate due to term limitations]], and eligible members may run for more than one of these offices if they so wish. Loss of Regional Assembly membership before the conclusion of this election will also result in loss of eligibility to run for any office during this election. [[A list of those eligible to run is provided below.]]
+This @@Label@@, The North Pacific will be electing [[a Delegate,]] [[a]] [[Vice Delegate,]] [[and]] [[Speaker,]] [[#]][[a]] [[Justice]][[s]][[,]] [[and]] [[an Attorney General]] to serve until the next election in [[NextSched]]. Any Citizen who has been a member for the last 15 days (since @@EligibilityDate@@) is eligible to run for these offices [[excepting that @@TermLimitedDelegate@@ is unable to run for Delegate due to term limitations]], and eligible members may run for more than one of these offices if they so wish. Loss of Citizenship before the conclusion of this election will also result in loss of eligibility to run for any office during this election. [[A list of those eligible to run is provided below.]]
 
 To run, one must either accept a nomination or declare candidacy [u]in this thread[/u]. To withdraw from running, one must post a withdrawal of candidacy in [u]this thread[/u]. 
 
@@ -61,7 +61,7 @@ Acceptances of nominations, declarations of candidacy, and withdrawals of candid
 
 This topic is intended for nominations, acceptances of nominations, declarations of candidacy, and withdrawals of candidacy; it may not be used for campaigning. Please keep in mind that lying about the election is election fraud, and that lying for any purpose is fraud.
 
-[[[spoiler=Eligible to run*]@@Eligible@@[/spoiler]*Loss of Regional Assembly membership before the conclusion of this election will also result in loss of eligibility to run for any office during this election.]]
+[[[spoiler=Eligible to run*]@@Eligible@@[/spoiler]*Loss of Citizenship before the conclusion of this election will also result in loss of eligibility to run for any office during this election.]]
 
 [b]Candidates:[/b][list=1]@@NomCandidates@@[/list]
 [b]Nominees:[/b][list=1]@@Nominees@@[/list]
@@ -97,7 +97,7 @@ Below is a template which covers these matters:
 
 Voting [[is now open]][[opens at (time=@@VotingOpen@@)]] in this @@Type@@. Voting will be from (time=@@VotingOpen@@) (your forum time) to (time=@@VotingEnd@@) (your forum time), and ballots submitted outside that time are invalid. 
 
-Everyone who is a Regional Assembly member at the time voting opens is eligible to vote. Loss of Regional Assembly membership before the close of voting also results in loss of eligibility to vote.
+Everyone who is a Citizen at the time voting opens is eligible to vote. Loss of Citizenship before the close of voting also results in loss of eligibility to vote.
 
 Voters must use the following voting form:
 
@@ -155,7 +155,7 @@ The ballot format should match the one included in the Voting topic, and the vot
 
 ## Template vote reminder PM and telegram
 
-It is recommended that Election Commissioners send a PM and a telegram to all members of the Regional Assembly eligible to vote when voting begins, encouraging them to cast their ballots. Below is a template that can be used for this purpose:
+It is recommended that Election Commissioners send a PM and a telegram to all Citizens eligible to vote when voting begins, encouraging them to cast their ballots. Below is a template that can be used for this purpose:
 
 **Title**: A reminder to vote
 
@@ -193,7 +193,7 @@ A publicly visible Elections template is provided [here](https://docs.google.com
 
 1. For every public vote, one can enter the voter's forum name, a link to their ballot, and their votes (as well as any notes if needed) in the Ballots sheet in the appropriate columns.
 2. For every private vote, one can do the same in the Ballots sheet, but exclude the voter's forum name. The names of private voters may _never_ be published. In this case, the link should be to the post where the private ballot was announced by the Election Commissioners.
-3. Check the Ballots sheet for invalid votes. A vote may be invalid because the person who cast it  was not or is no longer an eligible voter. Eligible voters are those that are Regional Assembly members throughout _the entire time_ the vote is open. Ways to confirm this include checking that voters are in the Regional Assembly usergroup as they vote, as well as checking against the official [Regional Assembly / Citizen Registry](https://docs.google.com/spreadsheet/ccc?key=0AjUCYljFPq3CdEtwc19aNTZJMWszeWhrcm1tOFdLcWc#gid=0) maintained by the Speaker's Office. It is important to keep in mind that Regional Assembly membership status changes take effect the moment they are announced by the Speaker's Office. For this reason, ultimately, Regional Assembly membership status can be definitively verified only by tracking recent Regional Assembly [admissions](http://forum.thenorthpacific.org/topic/6923980/1/) and [removals](http://forum.thenorthpacific.org/topic/6917173/1/).
+3. Check the Ballots sheet for invalid votes. A vote may be invalid because the person who cast it  was not or is no longer an eligible voter. Eligible voters are those that are Citizens throughout _the entire time_ the vote is open. Ways to confirm this include checking that voters are in the Citizens usergroup as they vote, as well as checking against the official [Citizen / Resident Registry](https://docs.google.com/spreadsheet/ccc?key=0AjUCYljFPq3CdEtwc19aNTZJMWszeWhrcm1tOFdLcWc#gid=0) maintained by the Speaker's Office. It is important to keep in mind that Citizenship status changes take effect the moment they are announced by the Speaker's Office. For this reason, ultimately, Citizenship status can be definitively verified only by tracking recent Citizenship [admissions](http://forum.thenorthpacific.org/topic/7306731/1/) and [removals](http://forum.thenorthpacific.org/topic/6917173/1/).
 4. Invalid votes can be invalidated by deleting the votes choices and turning their background color to red.
 5. It is advisable to inform invalid voters that their vote is invalid in shortly after they cast it, allowing them to correct any errors if possible.
 
