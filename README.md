@@ -99,7 +99,7 @@ Voting [[is now open]][[opens at (time=@@VotingOpen@@)]] in this @@Type@@. Votin
 
 Everyone who is a Citizen at the time voting opens is eligible to vote. Loss of Citizenship before the close of voting also results in loss of eligibility to vote.
 
-Voters must use the following voting form:
+Public Voters must use the following voting form:
 
 [code][[[b]Delegate:[/b] < @@Candidates@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
@@ -135,7 +135,9 @@ The Election Commission is required to announce all private ballots in the Votin
 
 ```
 Private ballot:
-[quote][[[b]Delegate:[/b] < @@Candidates@@ >]]
+[quote][b]Voter ID number:[/b] #
+
+[[[b]Delegate:[/b] < @@Candidates@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
 [[[b]Vice Delegate:[/b] < @@Candidates@@ >]]
@@ -155,11 +157,48 @@ The ballot format should match the one included in the Voting topic, and the vot
 
 ## Template vote reminder PM and telegram
 
-It is recommended that Election Commissioners send a PM and a telegram to all Citizens eligible to vote when voting begins, encouraging them to cast their ballots. Below is a template that can be used for this purpose:
+## Private Message
 
-**Title**: A reminder to vote
+The Election Commissioners should send a PM to all Citizens eligible to vote when voting begins, encouraging them to cast their ballots and including the private voting ballot template.
+
+**Title**: @@Month@@ @@Year@@ @@Type@@
 
 **Body**:
+
+```
+Hi there!
+
+This is a reminder that the  @@Month@@ @@Year@@ @@Type@@ is currently underway. Voting has begun on (time=@@VotingOpen@@) (your forum time) and will continue until (time=@@VotingEnd@@) (your forum time).
+
+If you have not already voted, the Election Commission would like to encourage you to visit the following thread and submit your ballot, either publicly [url=@@Voting URL@@]here[/url], or by replying to this PM with the below ballot filled out with a [url=https://www.random.org/integers/?num=1&min=1&max=10000&col=1&base=10&format=html&rnd=new]random[/url] voter ID number:
+
+[code][b]Voter ID number:[/b] #
+
+[[[b]Delegate:[/b] < @@Candidates@@ >]]
+[[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
+
+[[[b]Vice Delegate:[/b] < @@Candidates@@ >]]
+[[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
+
+[[[b]Speaker:[/b] < @@Candidates@@ >]]
+[[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
+
+[[[b]Court Justice [[(select 3)]]:][/b] < @@Candidates@@ >]]
+[[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
+
+[[[b]Attorney General:[/b] < @@Candidates@@ >]]
+[[[b]Would you like to reopen nominations?[/b] < Yes | No >]][/code]
+
+The more votes, the stronger democracy is in The North Pacific. Thank you for voting!
+
+Regards,
+~The Election Commission
+```
+
+### Telegram
+
+It is recommended that Election Commissioners also send a telegram to all Citizens eligible to vote when voting begins, encouraging them to cast their ballots. Below is a template that can be used for this purpose:
+
 ```
 Hi there!
 
@@ -167,7 +206,7 @@ This is a reminder that the  @@Month@@ @@Year@@ @@Type@@ is currently underway. 
 
 If you have not already voted, the Election Commission would like to encourage you to visit the following thread and submit your ballot:
 
-[b]@@Voting URL[/b]
+[b]@@Voting URL@@[/b]
 
 The more votes, the stronger democracy is in The North Pacific. Thank you for voting!
 
