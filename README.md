@@ -118,9 +118,9 @@ Public Voters must use the following voting form:
 
 [[[b][color=red]Abstain is a candidate in this election. If you wish to abstain from voting you must use the option of PRESENT.[/color][/b]]]
 
-Voters may submit their ballots either publicly by a post in this thread, or through personal message to [url=http://forum.thenorthpacific.org/msg/?c=2&mid=197430]The Voting Booth[/url]. Ballots not submitted according to these guidelines are invalid. Ambiguous votes are invalid.
+Voters may submit their ballots either publicly by a post in this thread, or through personal message to [url=http://forum.thenorthpacific.org/msg/?c=2&mid=197430]The Voting Booth[/url] with a random ballot ID number. Ballots not submitted according to these guidelines are invalid. Ambiguous votes are invalid.
 
-[b][color=red]Election Commissioners are required by law to announce private votes in the voting thread, including the candidate(s) the vote was cast for, promptly after those votes are cast. For this reason, voters are discouraged from announcing, as was custom, that they have voted privately, as the subsequent public declaration by the Election Commissioners can potentially reveal how they voted.[/color][/b]
+[b][color=red]Election Commissioners are required by law to announce private votes in the voting thread, including the candidate(s) the vote was cast for, promptly after those votes are cast. To allow voters to verify their vote is individually counted, the Election Commission will also be including the ballot ID number. For this reason, voters are discouraged from announcing, as was custom, that they have voted privately, as the subsequent public declaration by the Election Commissioners can potentially reveal how they voted.[/color][/b]
 
 Please do not post anything other than your ballot in this thread. If you have any questions please send them directly to [url=http://forum.thenorthpacific.org/msg/?c=2&mid=197430]The Voting Booth[/url] or start a new thread. Additional and unnecessary comments will be removed.
 
@@ -135,7 +135,7 @@ The Election Commission is required to announce all private ballots in the Votin
 
 ```
 Private ballot:
-[quote][b]Voter ID number:[/b] #
+[quote][b]Ballot ID number:[/b] #
 
 [[[b]Delegate:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
@@ -170,9 +170,9 @@ Hi there!
 
 This is a reminder that the  @@Month@@ @@Year@@ @@Type@@ is currently underway. Voting has begun on (time=@@VotingOpen@@) (your forum time) and will continue until (time=@@VotingEnd@@) (your forum time).
 
-If you have not already voted, the Election Commission would like to encourage you to visit the following thread and submit your ballot, either publicly [url=@@Voting URL@@]here[/url], or by replying to this PM with the below ballot filled out with a [url=https://www.random.org/integers/?num=1&min=1&max=10000&col=1&base=10&format=html&rnd=new]random[/url] voter ID number:
+If you have not already voted, the Election Commission would like to encourage you to visit the following thread and submit your ballot, either publicly [url=@@Voting URL@@]here[/url], or by replying to this PM with the below ballot filled out with a [url=https://www.random.org/integers/?num=1&min=1&max=10000&col=1&base=10&format=html&rnd=new]random[/url] ballot ID number. The ballot ID number will be posted together with your vote but with no reference to your identity so that you can verify that we posted your vote and any votes otherwise identical to yours, separately.
 
-[code][b]Voter ID number:[/b] #
+[code][b]Ballot ID number:[/b] #
 
 [[[b]Delegate:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
