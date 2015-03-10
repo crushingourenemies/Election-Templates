@@ -22,7 +22,7 @@ In all the below templates, a word surrounded by double @ signs i.e. @@General@@
 15. Nominees: the list of persons nominated who are eligible but have not accepted nomination, each prefixed by [*] to itemize.
 16. DeclinedNominees: the list of persons nominated who are eligible but have declined the nomination.
 17. InvalidNominees: the list of persons nominated who are ineligible to run.
-18. Candidates: the list of candidates followed by "Abstain" or "Present" if Abstain is a candidate in this election, separated by " | ".
+18. Options: the list of candidates followed by "Abstain" or "Present" if Abstain is a candidate in this election, separated by " | ".
 19. ChartURL: The URL of a pie chart image for election results, obtainable from an election counting spreadsheet.
 20. CandidateVotes: the row in the results sheet's appropriate table for the candidate, prefixed by "[c]", for each candidate, concatenated.
 21. ElectionCommissioners: the list of Election Commissioners, separated by ", ".
@@ -101,19 +101,19 @@ Everyone who is a Citizen at the time voting opens is eligible to vote. Loss of 
 
 Public Voters must use the following voting form:
 
-[code][[[b]Delegate:[/b] < @@Candidates@@ >]]
+[code][[[b]Delegate:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Vice Delegate:[/b] < @@Candidates@@ >]]
+[[[b]Vice Delegate:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Speaker:[/b] < @@Candidates@@ >]]
+[[[b]Speaker:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Court Justice [[(select 3)]]:][/b] < @@Candidates@@ >]]
+[[[b]Court Justice [[(select 3)]]:][/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Attorney General:[/b] < @@Candidates@@ >]]
+[[[b]Attorney General:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]][/code]
 
 [[[b][color=red]Abstain is a candidate in this election. If you wish to abstain from voting you must use the option of PRESENT.[/color][/b]]]
@@ -137,19 +137,19 @@ The Election Commission is required to announce all private ballots in the Votin
 Private ballot:
 [quote][b]Voter ID number:[/b] #
 
-[[[b]Delegate:[/b] < @@Candidates@@ >]]
+[[[b]Delegate:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Vice Delegate:[/b] < @@Candidates@@ >]]
+[[[b]Vice Delegate:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Speaker:[/b] < @@Candidates@@ >]]
+[[[b]Speaker:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Court Justice [[(select 3)]]:][/b] < @@Candidates@@ >]]
+[[[b]Court Justice [[(select 3)]]:][/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Attorney General:[/b] < @@Candidates@@ >]]
+[[[b]Attorney General:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]][/quote]
 ```
 
@@ -174,19 +174,19 @@ If you have not already voted, the Election Commission would like to encourage y
 
 [code][b]Voter ID number:[/b] #
 
-[[[b]Delegate:[/b] < @@Candidates@@ >]]
+[[[b]Delegate:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Vice Delegate:[/b] < @@Candidates@@ >]]
+[[[b]Vice Delegate:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Speaker:[/b] < @@Candidates@@ >]]
+[[[b]Speaker:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Court Justice [[(select 3)]]:][/b] < @@Candidates@@ >]]
+[[[b]Court Justice [[(select 3)]]:][/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Attorney General:[/b] < @@Candidates@@ >]]
+[[[b]Attorney General:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]][/code]
 
 The more votes, the stronger democracy is in The North Pacific. Thank you for voting!
