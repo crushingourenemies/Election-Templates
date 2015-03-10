@@ -110,7 +110,7 @@ Public Voters must use the following voting form:
 [[[b]Speaker:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Court Justice [[(select 3)]]:][/b] < @@Options@@ >]]
+[[[b]Court Justice [[(select up to 3)]]:][/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
 [[[b]Attorney General:[/b] < @@Options@@ >]]
@@ -146,7 +146,7 @@ Private ballot:
 [[[b]Speaker:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Court Justice [[(select 3)]]:][/b] < @@Options@@ >]]
+[[[b]Court Justice [[(select up to 3)]]:][/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
 [[[b]Attorney General:[/b] < @@Options@@ >]]
