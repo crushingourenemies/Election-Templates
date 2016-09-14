@@ -51,7 +51,7 @@ Below is a template which covers these questions:
 ```
 [center][big][b]Candidacy Declarations: @@Month@@ @@Year@@ @@Type@@[/b][/big]
 
-[img]http://www.thenorthpacific.org/images/ec-seal.png[/img][/center]
+[img]http://z2.ifrm.com/10711/28/0/p1090273/ec_seal.png[/img][/center]
 
 This @@Label@@, The North Pacific will be electing [[a Delegate,]] [[a]] [[Vice Delegate,]] [[and]] [[Speaker,]] [[#]][[a]] [[Justice]][[s]][[,]] [[and]] [[an Attorney General]] to serve until the next election in [[NextSched]]. Any Citizen who has been a member for the last 15 days (since @@EligibilityDate@@) is eligible to run for these offices [[excepting that @@TermLimitedDelegate@@ is unable to run for Delegate due to term limitations]], and eligible members may run for more than one of these offices if they so wish. Loss of Citizenship before the conclusion of this election will also result in loss of eligibility to run for any office during this election. [[A list of those eligible to run is provided below.]]
 
@@ -93,7 +93,7 @@ Below is a template which covers these matters:
 ```
 [center][big][b]Voting: @@Month@@ @@Year@@ @@Type@@[/b][/big]
 
-[img]http://www.thenorthpacific.org/images/ec-seal.png[/img][/center]
+[img]http://z2.ifrm.com/10711/28/0/p1090273/ec_seal.png[/img][/center]
 
 Voting [[is now open]][[opens at (time=@@VotingOpen@@)]] in this @@Type@@. Voting will be from (time=@@VotingOpen@@) (your forum time) to (time=@@VotingEnd@@) (your forum time), and ballots submitted outside that time are invalid. 
 
@@ -262,7 +262,7 @@ Below is a template which covers these questions:
 ```
 [center][big][b]Results: @@Month@@ @@Year@@ @@Type@@[/b][/big]
 
-[img]http://www.thenorthpacific.org/images/ec-seal.png[/img][/center]
+[img]http://z2.ifrm.com/10711/28/0/p1090273/ec_seal.png[/img][/center]
 
 The Election Commission has counted the votes in this @@Type@@ and now publishes these results, attesting they are true and correct.
 
