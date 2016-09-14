@@ -27,6 +27,7 @@ In all the below templates, a word surrounded by double @ signs i.e. @@General@@
 20. CandidateVotes: the row in the results sheet's appropriate table for the candidate, prefixed by "[c]", for each candidate, concatenated.
 21. ElectionCommissioners: the list of Election Commissioners, separated by ", ".
 22. VotingURL: The URL of the Voting topic.
+23. Duration: The duration of voting (if not five) in days.
 
 Any segment of a template which is enclosed in double square brackets i.e. [[[or not]] is understood to be excluded if unnecessary for the particular election.
 
@@ -51,7 +52,7 @@ Below is a template which covers these questions:
 ```
 [center][big][b]Candidacy Declarations: @@Month@@ @@Year@@ @@Type@@[/b][/big]
 
-[img]http://www.thenorthpacific.org/images/ec-seal.png[/img][/center]
+[img]http://z2.ifrm.com/10711/28/0/p1090273/ec_seal.png[/img][/center]
 
 This @@Label@@, The North Pacific will be electing [[a Delegate,]] [[a]] [[Vice Delegate,]] [[and]] [[Speaker,]] [[#]][[a]] [[Justice]][[s]][[,]] [[and]] [[an Attorney General]] to serve until the next election in [[NextSched]]. Any Citizen who has been a member for the last 15 days (since @@EligibilityDate@@) is eligible to run for these offices [[excepting that @@TermLimitedDelegate@@ is unable to run for Delegate due to term limitations]], and eligible members may run for more than one of these offices if they so wish. Loss of Citizenship before the conclusion of this election will also result in loss of eligibility to run for any office during this election. [[A list of those eligible to run is provided below.]]
 
@@ -93,7 +94,7 @@ Below is a template which covers these matters:
 ```
 [center][big][b]Voting: @@Month@@ @@Year@@ @@Type@@[/b][/big]
 
-[img]http://www.thenorthpacific.org/images/ec-seal.png[/img][/center]
+[img]http://z2.ifrm.com/10711/28/0/p1090273/ec_seal.png[/img][/center]
 
 Voting [[is now open]][[opens at (time=@@VotingOpen@@)]] in this @@Type@@. Voting will be from (time=@@VotingOpen@@) (your forum time) to (time=@@VotingEnd@@) (your forum time), and ballots submitted outside that time are invalid. 
 
@@ -118,7 +119,26 @@ Public Voters must use the following voting form:
 
 [[[b][color=red]Abstain is a candidate in this election. If you wish to abstain from voting you must use the option of PRESENT.[/color][/b]]]
 
-Voters may submit their ballots either publicly by a post in this thread, or through personal message to [url=http://forum.thenorthpacific.org/msg/?c=2&mid=197430]The Voting Booth[/url] with a random ballot ID number. Ballots not submitted according to these guidelines are invalid. Ambiguous votes are invalid.
+Voters may submit their ballots either publicly by a post in this thread, or through personal message to [url=http://forum.thenorthpacific.org/msg/?c=2&mid=197430]The Voting Booth[/url] with a [url=https://www.random.org/integers/?num=1&min=1&max=10000&col=1&base=10&format=html&rnd=new]random[/url] ballot ID number, using the below form. The ballot ID number will be posted together with your vote but with no reference to your identity so that you can verify that we posted your vote and any votes otherwise identical to yours, separately.
+
+[spoiler=Private voting form][code][b]Ballot ID number:[/b] #
+
+[[[b]Delegate:[/b] < @@Options@@ >]]
+[[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
+
+[[[b]Vice Delegate:[/b] < @@Options@@ >]]
+[[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
+
+[[[b]Speaker:[/b] < @@Options@@ >]]
+[[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
+
+[[[b]Court Justice [[(select 3)]]:[/b] < @@Options@@ >]]
+[[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
+
+[[[b]Attorney General:[/b] < @@Options@@ >]]
+[[[b]Would you like to reopen nominations?[/b] < Yes | No >]][/code][/spoiler]
+
+Ballots not submitted according to these guidelines are invalid. Ambiguous votes are invalid.
 
 [b][color=red]Election Commissioners are required by law to announce private votes in the voting thread, including the candidate(s) the vote was cast for, promptly after those votes are cast. To allow voters to verify their vote is individually counted, the Election Commission will also be including the ballot ID number. For this reason, voters are discouraged from announcing, as was custom, that they have voted privately, as the subsequent public declaration by the Election Commissioners can potentially reveal how they voted.[/color][/b]
 
@@ -146,7 +166,7 @@ Private ballot:
 [[[b]Speaker:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Court Justice [[(select up to 3)]]:][/b] < @@Options@@ >]]
+[[[b]Court Justice [[(select up to 3)]]:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
 [[[b]Attorney General:[/b] < @@Options@@ >]]
@@ -183,7 +203,7 @@ If you have not already voted, the Election Commission would like to encourage y
 [[[b]Speaker:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Court Justice [[(select 3)]]:][/b] < @@Options@@ >]]
+[[[b]Court Justice [[(select 3)]]:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
 [[[b]Attorney General:[/b] < @@Options@@ >]]
@@ -202,7 +222,7 @@ It is recommended that Election Commissioners also send a telegram to all Citize
 ```
 Hi there!
 
-This is a reminder that the  @@Month@@ @@Year@@ @@Type@@ is currently underway. Voting has begun on (time=@@VotingOpen@@) (your forum time) and will continue until (time=@@VotingEnd@@) (your forum time).
+This is a reminder that the  @@Month@@ @@Year@@ @@Type@@ is currently underway. Voting has begun and will continue for [[five]] [[@@Duration@@]] days.
 
 If you have not already voted, the Election Commission would like to encourage you to visit the following thread and submit your ballot:
 
@@ -262,7 +282,7 @@ Below is a template which covers these questions:
 ```
 [center][big][b]Results: @@Month@@ @@Year@@ @@Type@@[/b][/big]
 
-[img]http://www.thenorthpacific.org/images/ec-seal.png[/img][/center]
+[img]http://z2.ifrm.com/10711/28/0/p1090273/ec_seal.png[/img][/center]
 
 The Election Commission has counted the votes in this @@Type@@ and now publishes these results, attesting they are true and correct.
 
