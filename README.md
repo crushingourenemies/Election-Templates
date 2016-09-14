@@ -27,6 +27,7 @@ In all the below templates, a word surrounded by double @ signs i.e. @@General@@
 20. CandidateVotes: the row in the results sheet's appropriate table for the candidate, prefixed by "[c]", for each candidate, concatenated.
 21. ElectionCommissioners: the list of Election Commissioners, separated by ", ".
 22. VotingURL: The URL of the Voting topic.
+23. Duration: The duration of voting (if not five) in days.
 
 Any segment of a template which is enclosed in double square brackets i.e. [[[or not]] is understood to be excluded if unnecessary for the particular election.
 
@@ -202,7 +203,7 @@ It is recommended that Election Commissioners also send a telegram to all Citize
 ```
 Hi there!
 
-This is a reminder that the  @@Month@@ @@Year@@ @@Type@@ is currently underway. Voting has begun on (time=@@VotingOpen@@) (your forum time) and will continue until (time=@@VotingEnd@@) (your forum time).
+This is a reminder that the  @@Month@@ @@Year@@ @@Type@@ is currently underway. Voting has begun and will continue for [[five]] [[@@Duration@@]] days.
 
 If you have not already voted, the Election Commission would like to encourage you to visit the following thread and submit your ballot:
 
