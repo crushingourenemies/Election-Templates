@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Election-templates : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Election-templates</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/The-North-Pacific/Election-Templates">View on GitHub</a>
+
+          <h1 id="project_title">Election-templates</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/The-North-Pacific/Election-Templates/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/The-North-Pacific/Election-Templates/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="election-templates" class="anchor" href="#election-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Election-Templates</h1>
+
+<p>Templates for TNP Elections</p>
+
+<p>In all the below templates, a word surrounded by double @ signs i.e. @<a href="https://github.com/General" class="user-mention">@General</a>@@ is to be substituted as appropriately defined:</p>
+
+<ol>
+<li>Type: One of "General Election", "Judicial Election", or "Special @<a href="https://github.com/Position" class="user-mention">@Position</a>@@ Election.</li>
+<li>Position: One of "Delegate", "Vice Delegate", "Speaker", "Justice", or "Attorney General".</li>
+<li>Month: the month during which the election begins.</li>
+<li>Year: the year during which the election begins.</li>
+<li>Label: For a scheduled election, the Month. For a special election, "Special Election".</li>
+<li>NextSched: the month of the next scheduled election for the position(s) being elected.</li>
+<li>EligibilityDate: the date one must have joined the Regional Assembly / become a Citizen by to be eligible to run in the election (15 days before nominations are opened).</li>
+<li>TermLimitedDelegate: a name or list of names of persons ineligible to run for Delegate due to term limitations.</li>
+<li>CandidaciesOpen: the time candidacy declarations open as a UNIX timestamp (number of seconds since January 1st 1970, GMT). Determinable using <a href="http://www.timestampgenerator.com/">a tool</a>.</li>
+<li>CandidaciesClose: the time candidacy declarations close as a UNIX timestamp.</li>
+<li>VotingOpen: the time voting opens as a UNIX timestamp.</li>
+<li>VotingClose: the time voting closes as a UNIX timestamp.</li>
+<li>Eligible: the list of persons eligible to run for at least one of the positions.</li>
+<li>NomCandidates: the list of valid candidates, each prefixed by [*] to itemize.</li>
+<li>Nominees: the list of persons nominated who are eligible but have not accepted nomination, each prefixed by [*] to itemize.</li>
+<li>DeclinedNominees: the list of persons nominated who are eligible but have declined the nomination.</li>
+<li>InvalidNominees: the list of persons nominated who are ineligible to run.</li>
+<li>Options: the list of candidates followed by "Abstain" or "Present" if Abstain is a candidate in this election, separated by " | ".</li>
+<li>ChartURL: The URL of a pie chart image for election results, obtainable from an election counting spreadsheet.</li>
+<li>CandidateVotes: the row in the results sheet's appropriate table for the candidate, prefixed by "[c]", for each candidate, concatenated.</li>
+<li>ElectionCommissioners: the list of Election Commissioners, separated by ", ".</li>
+<li>VotingURL: The URL of the Voting topic.</li>
+<li>Duration: The duration of voting (if not five) in days.</li>
+</ol>
+
+<p>Any segment of a template which is enclosed in double square brackets i.e. [[[or not]] is understood to be excluded if unnecessary for the particular election.</p>
+
+<h2>
+<a id="template-candidacy-declarations-topic-op" class="anchor" href="#template-candidacy-declarations-topic-op" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Template Candidacy Declarations topic OP</h2>
+
+<p>A Candidacy Declarations topic OP should include:</p>
+
+<ol>
+<li>Instructions for candidates which cover:
+
+<ol>
+<li>what positions are being elected;</li>
+<li>the eligibility requirements;</li>
+<li>how to make a nomination, accept one, or declare candidacy;</li>
+<li>when the deadline for acceptance of nominations and candidacy declarations is.</li>
+</ol>
+</li>
+<li>Optionally, a list of eligible members (Citizens who have been Citizens since 15 days ago at the latest).</li>
+<li>An easily readable listing of candidates and/or nominees.</li>
+</ol>
+
+<p>Below is a template which covers these questions:</p>
+
+<p><strong>Title</strong>: Candidacy Declarations: @<a href="https://github.com/Month" class="user-mention">@Month</a>@@ @<a href="https://github.com/Year" class="user-mention">@Year</a>@@ @<a href="https://github.com/Type" class="user-mention">@Type</a>@@ </p>
+
+<p><strong>Body</strong>:</p>
+
+<pre><code>[center][big][b]Candidacy Declarations: @@Month@@ @@Year@@ @@Type@@[/b][/big]
+
+[img]http://z2.ifrm.com/10711/28/0/p1090273/ec_seal.png[/img][/center]
+
+This @@Label@@, The North Pacific will be electing [[a Delegate,]] [[a]] [[Vice Delegate,]] [[and]] [[Speaker,]] [[#]][[a]] [[Justice]][[s]][[,]] [[and]] [[an Attorney General]] to serve until the next election in [[NextSched]]. Any Citizen who has been a member for the last 15 days (since @@EligibilityDate@@) is eligible to run for these offices [[excepting that @@TermLimitedDelegate@@ is unable to run for Delegate due to term limitations]], and eligible members may run for more than one of these offices if they so wish. Loss of Citizenship before the conclusion of this election will also result in loss of eligibility to run for any office during this election. [[A list of those eligible to run is provided below.]]
+
+To run, one must either accept a nomination or declare candidacy [u]in this thread[/u]. To withdraw from running, one must post a withdrawal of candidacy in [u]this thread[/u]. 
+
+Acceptances of nominations, declarations of candidacy, and withdrawals of candidacy posted outside this thread will be discounted. Acceptance of a nomination is understood to also constitute declaration of candidacy even if no nomination has been made. Acceptances of nominations, declarations of candidacy, and withdrawals of candidacy must be posted during the candidacy declaration period to be valid. The candidacy declaration period is from (time=@@CandidaciesOpen@@) (your forum time) to (time=@@CandidaciesEnd@@) (your forum time). Voting will be approximately from (time=@@VotingOpen@@) (your forum time) to (time=@@VotingEnd@@) (your forum time).
+
+This topic is intended for nominations, acceptances of nominations, declarations of candidacy, and withdrawals of candidacy; it may not be used for campaigning. Please keep in mind that lying about the election is election fraud, and that lying for any purpose is fraud.
+
+[[[spoiler=Eligible to run*]@@Eligible@@[/spoiler]*Loss of Citizenship before the conclusion of this election will also result in loss of eligibility to run for any office during this election.]]
+
+[b]Candidates:[/b][list=1]@@NomCandidates@@[/list]
+[b]Nominees:[/b][list=1]@@Nominees@@[/list]
+[b]Declined Nomination:[/b][list=1]@@DeclinedNominees@@[/list]
+[b]Invalid Nominees:[/b][list=1]@@InvalidNominees@@[/list]
+
+[i]Election Commissioners: @@ElectionCommissioners@@[/i]
+</code></pre>
+
+<p>The candidacy declarations topic should be pinned.</p>
+
+<h2>
+<a id="template-voting-topic-op" class="anchor" href="#template-voting-topic-op" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Template Voting topic OP</h2>
+
+<p>A Voting topic OP should include:</p>
+
+<ol>
+<li>Instructions for voters
+
+<ol>
+<li>what positions are being elected;</li>
+<li>who the candidates are;</li>
+<li>how to vote (by post and/or by PM);</li>
+<li>when the deadline for voting is.</li>
+</ol>
+</li>
+<li>A ballot template.</li>
+</ol>
+
+<p>Below is a template which covers these matters:</p>
+
+<p><strong>Title</strong>: Voting: @<a href="https://github.com/Month" class="user-mention">@Month</a>@@ @<a href="https://github.com/Year" class="user-mention">@Year</a>@@ @<a href="https://github.com/Type" class="user-mention">@Type</a>@@ </p>
+
+<p><strong>Body</strong>:</p>
+
+<pre><code>[center][big][b]Voting: @@Month@@ @@Year@@ @@Type@@[/b][/big]
+
+[img]http://z2.ifrm.com/10711/28/0/p1090273/ec_seal.png[/img][/center]
+
+Voting [[is now open]][[opens at (time=@@VotingOpen@@)]] in this @@Type@@. Voting will be from (time=@@VotingOpen@@) (your forum time) to (time=@@VotingEnd@@) (your forum time), and ballots submitted outside that time are invalid. 
+
+Everyone who is a Citizen at the time voting opens is eligible to vote. Loss of Citizenship before the close of voting also results in loss of eligibility to vote.
+
+Public Voters must use the following voting form:
+
+[code][[[b]Delegate:[/b] &lt; @@Options@@ &gt;]]
+[[[b]Would you like to reopen nominations?[/b] &lt; Yes | No &gt;]]
+
+[[[b]Vice Delegate:[/b] &lt; @@Options@@ &gt;]]
+[[[b]Would you like to reopen nominations?[/b] &lt; Yes | No &gt;]]
+
+[[[b]Speaker:[/b] &lt; @@Options@@ &gt;]]
+[[[b]Would you like to reopen nominations?[/b] &lt; Yes | No &gt;]]
+
+[[[b]Court Justice [[(select up to 3)]]:][/b] &lt; @@Options@@ &gt;]]
+[[[b]Would you like to reopen nominations?[/b] &lt; Yes | No &gt;]]
+
+[[[b]Attorney General:[/b] &lt; @@Options@@ &gt;]]
+[[[b]Would you like to reopen nominations?[/b] &lt; Yes | No &gt;]][/code]
+
+[[[b][color=red]Abstain is a candidate in this election. If you wish to abstain from voting you must use the option of PRESENT.[/color][/b]]]
+
+Voters may submit their ballots either publicly by a post in this thread, or through personal message to [url=http://forum.thenorthpacific.org/msg/?c=2&amp;mid=197430]The Voting Booth[/url] with a [url=https://www.random.org/integers/?num=1&amp;min=1&amp;max=10000&amp;col=1&amp;base=10&amp;format=html&amp;rnd=new]random[/url] ballot ID number, using the below form. The ballot ID number will be posted together with your vote but with no reference to your identity so that you can verify that we posted your vote and any votes otherwise identical to yours, separately.
+
+[spoiler=Private voting form][code][b]Ballot ID number:[/b] #
+
+[[[b]Delegate:[/b] &lt; @@Options@@ &gt;]]
+[[[b]Would you like to reopen nominations?[/b] &lt; Yes | No &gt;]]
+
+[[[b]Vice Delegate:[/b] &lt; @@Options@@ &gt;]]
+[[[b]Would you like to reopen nominations?[/b] &lt; Yes | No &gt;]]
+
+[[[b]Speaker:[/b] &lt; @@Options@@ &gt;]]
+[[[b]Would you like to reopen nominations?[/b] &lt; Yes | No &gt;]]
+
+[[[b]Court Justice [[(select 3)]]:[/b] &lt; @@Options@@ &gt;]]
+[[[b]Would you like to reopen nominations?[/b] &lt; Yes | No &gt;]]
+
+[[[b]Attorney General:[/b] &lt; @@Options@@ &gt;]]
+[[[b]Would you like to reopen nominations?[/b] &lt; Yes | No &gt;]][/code][/spoiler]
+
+Ballots not submitted according to these guidelines are invalid. Ambiguous votes are invalid.
+
+[b][color=red]Election Commissioners are required by law to announce private votes in the voting thread, including the candidate(s) the vote was cast for, promptly after those votes are cast. To allow voters to verify their vote is individually counted, the Election Commission will also be including the ballot ID number. For this reason, voters are discouraged from announcing, as was custom, that they have voted privately, as the subsequent public declaration by the Election Commissioners can potentially reveal how they voted.[/color][/b]
+
+Please do not post anything other than your ballot in this thread. If you have any questions please send them directly to [url=http://forum.thenorthpacific.org/msg/?c=2&amp;mid=197430]The Voting Booth[/url] or start a new thread. Additional and unnecessary comments will be removed.
+
+[i]Election Commissioners: @@ElectionCommissioners@@[/i]
+</code></pre>
+
+<p>The voting topic should be pinned.</p>
+
+<h2>
+<a id="template-private-ballot-announcement-post" class="anchor" href="#template-private-ballot-announcement-post" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Template private ballot announcement post</h2>
+
+<p>The Election Commission is required to announce all private ballots in the Voting topic in a timely manner. It is recommended that each such ballot is announced in a separate post, to facilitate counting. Below is a template that can be used for such posts:</p>
+
+<pre><code>Private ballot:
+[quote][b]Ballot ID number:[/b] #
+
+[[[b]Delegate:[/b] &lt; @@Options@@ &gt;]]
+[[[b]Would you like to reopen nominations?[/b] &lt; Yes | No &gt;]]
+
+[[[b]Vice Delegate:[/b] &lt; @@Options@@ &gt;]]
+[[[b]Would you like to reopen nominations?[/b] &lt; Yes | No &gt;]]
+
+[[[b]Speaker:[/b] &lt; @@Options@@ &gt;]]
+[[[b]Would you like to reopen nominations?[/b] &lt; Yes | No &gt;]]
+
+[[[b]Court Justice [[(select up to 3)]]:[/b] &lt; @@Options@@ &gt;]]
+[[[b]Would you like to reopen nominations?[/b] &lt; Yes | No &gt;]]
+
+[[[b]Attorney General:[/b] &lt; @@Options@@ &gt;]]
+[[[b]Would you like to reopen nominations?[/b] &lt; Yes | No &gt;]][/quote]
+</code></pre>
+
+<p>The ballot format should match the one included in the Voting topic, and the vote options <em>must</em> match those of the private ballot.</p>
+
+<h2>
+<a id="template-vote-reminder-pm-and-telegram" class="anchor" href="#template-vote-reminder-pm-and-telegram" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Template vote reminder PM and telegram</h2>
+
+<h2>
+<a id="private-message" class="anchor" href="#private-message" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Private Message</h2>
+
+<p>The Election Commissioners should send a PM to all Citizens eligible to vote when voting begins, encouraging them to cast their ballots and including the private voting ballot template.</p>
+
+<p><strong>Title</strong>: @<a href="https://github.com/Month" class="user-mention">@Month</a>@@ @<a href="https://github.com/Year" class="user-mention">@Year</a>@@ @<a href="https://github.com/Type" class="user-mention">@Type</a>@@</p>
+
+<p><strong>Body</strong>:</p>
+
+<pre><code>Hi there!
+
+This is a reminder that the  @@Month@@ @@Year@@ @@Type@@ is currently underway. Voting has begun on (time=@@VotingOpen@@) (your forum time) and will continue until (time=@@VotingEnd@@) (your forum time).
+
+If you have not already voted, the Election Commission would like to encourage you to visit the following thread and submit your ballot, either publicly [url=@@Voting URL@@]here[/url], or by replying to this PM with the below ballot filled out with a [url=https://www.random.org/integers/?num=1&amp;min=1&amp;max=10000&amp;col=1&amp;base=10&amp;format=html&amp;rnd=new]random[/url] ballot ID number. The ballot ID number will be posted together with your vote but with no reference to your identity so that you can verify that we posted your vote and any votes otherwise identical to yours, separately.
+
+[code][b]Ballot ID number:[/b] #
+
+[[[b]Delegate:[/b] &lt; @@Options@@ &gt;]]
+[[[b]Would you like to reopen nominations?[/b] &lt; Yes | No &gt;]]
+
+[[[b]Vice Delegate:[/b] &lt; @@Options@@ &gt;]]
+[[[b]Would you like to reopen nominations?[/b] &lt; Yes | No &gt;]]
+
+[[[b]Speaker:[/b] &lt; @@Options@@ &gt;]]
+[[[b]Would you like to reopen nominations?[/b] &lt; Yes | No &gt;]]
+
+[[[b]Court Justice [[(select 3)]]:[/b] &lt; @@Options@@ &gt;]]
+[[[b]Would you like to reopen nominations?[/b] &lt; Yes | No &gt;]]
+
+[[[b]Attorney General:[/b] &lt; @@Options@@ &gt;]]
+[[[b]Would you like to reopen nominations?[/b] &lt; Yes | No &gt;]][/code]
+
+The more votes, the stronger democracy is in The North Pacific. Thank you for voting!
+
+Regards,
+~The Election Commission
+</code></pre>
+
+<h3>
+<a id="telegram" class="anchor" href="#telegram" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Telegram</h3>
+
+<p>It is recommended that Election Commissioners also send a telegram to all Citizens eligible to vote when voting begins, encouraging them to cast their ballots. Below is a template that can be used for this purpose:</p>
+
+<pre><code>Hi there!
+
+This is a reminder that the  @@Month@@ @@Year@@ @@Type@@ is currently underway. Voting has begun and will continue for [[five]] [[@@Duration@@]] days.
+
+If you have not already voted, the Election Commission would like to encourage you to visit the following thread and submit your ballot:
+
+[b]@@Voting URL@@[/b]
+
+The more votes, the stronger democracy is in The North Pacific. Thank you for voting!
+
+Regards,
+~The Election Commission
+</code></pre>
+
+<h2>
+<a id="template-counting-spreadsheet" class="anchor" href="#template-counting-spreadsheet" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Template counting spreadsheet</h2>
+
+<p>A publicly visible Elections template is provided <a href="https://docs.google.com/spreadsheets/d/1tZ4jLz6Qcjtv_bWZSMVTgnqv1CZErog4KDq7uMl0uy8/">here</a>.</p>
+
+<h3>
+<a id="instructions-for-cloning" class="anchor" href="#instructions-for-cloning" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Instructions for cloning</h3>
+
+<ol>
+<li>You can copy the counting template by opening it, clicking the File menu in the upper left hand corner, and clicking "Make a copy..."</li>
+<li>It is generally advisable to share the counting sheet with all Election Commissioners.</li>
+<li>To update the copy of the template for the current election:
+
+<ol>
+<li>Remove the sheets for other types of elections (click the triangle next to the sheet name, then click Delete). </li>
+<li>Update the set of candidates in the Results sheet.</li>
+<li>If more candidates are needed than there are spaces, the macros will need to be adjusted. </li>
+</ol>
+</li>
+</ol>
+
+<h3>
+<a id="instructions-for-counting" class="anchor" href="#instructions-for-counting" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Instructions for counting</h3>
+
+<ol>
+<li>For every public vote, one can enter the voter's forum name, a link to their ballot, and their votes (as well as any notes if needed) in the Ballots sheet in the appropriate columns.</li>
+<li>For every private vote, one can do the same in the Ballots sheet, but exclude the voter's forum name. The names of private voters may <em>never</em> be published. In this case, the link should be to the post where the private ballot was announced by the Election Commissioners.</li>
+<li>Check the Ballots sheet for invalid votes. A vote may be invalid because the person who cast it  was not or is no longer an eligible voter. Eligible voters are those that are Citizens throughout <em>the entire time</em> the vote is open. Ways to confirm this include checking that voters are in the Citizens usergroup as they vote, as well as checking against the official <a href="https://docs.google.com/spreadsheet/ccc?key=0AjUCYljFPq3CdEtwc19aNTZJMWszeWhrcm1tOFdLcWc#gid=0">Citizen / Resident Registry</a> maintained by the Speaker's Office. It is important to keep in mind that Citizenship status changes take effect the moment they are announced by the Speaker's Office. For this reason, ultimately, Citizenship status can be definitively verified only by tracking recent Citizenship <a href="http://forum.thenorthpacific.org/topic/7306731/1/">admissions</a> and <a href="http://forum.thenorthpacific.org/topic/6917173/1/">removals</a>.</li>
+<li>Invalid votes can be invalidated by deleting the votes choices and turning their background color to red.</li>
+<li>It is advisable to inform invalid voters that their vote is invalid in shortly after they cast it, allowing them to correct any errors if possible.</li>
+</ol>
+
+<h2>
+<a id="important-note-regarding-private-votes" class="anchor" href="#important-note-regarding-private-votes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Important Note regarding Private Votes</h2>
+
+<p>It is important to make sure that the published spreadsheet:</p>
+
+<ol>
+<li>Lists all private votes.</li>
+<li>Does <em>not</em> list the names of the corresponding voters.</li>
+</ol>
+
+<p>After the election is concluded, it is generally advisable to put all private ballot PMs into a folder, to afford future Election Commissions a clean working environment.</p>
+
+<h2>
+<a id="template-results-topic-op" class="anchor" href="#template-results-topic-op" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Template Results topic OP</h2>
+
+<p>A Results post must cover:</p>
+
+<ol>
+<li>That the votes have been counted.</li>
+<li>How many votes were counted for each candidate, and how many abstained.</li>
+<li>Which publicly posted votes (including private ballots announced by Election Commissioners in an anonymized manner) were invalid, if any (this can be addressed by inserting a note using the BBCode [note] tag following the affected total, or by adding a separate paragraph).</li>
+<li>Who, if anyone, is elected to which position.</li>
+<li>Whether a runoff will be held.</li>
+</ol>
+
+<p>Below is a template which covers these questions:</p>
+
+<p><strong>Title</strong>: Results: @<a href="https://github.com/Month" class="user-mention">@Month</a>@@ @<a href="https://github.com/Year" class="user-mention">@Year</a>@@ @<a href="https://github.com/Type" class="user-mention">@Type</a>@@
+<strong>Body</strong>:</p>
+
+<pre><code>[center][big][b]Results: @@Month@@ @@Year@@ @@Type@@[/b][/big]
+
+[img]http://z2.ifrm.com/10711/28/0/p1090273/ec_seal.png[/img][/center]
+
+The Election Commission has counted the votes in this @@Type@@ and now publishes these results, attesting they are true and correct.
+
+[[[center][img]@@ChartURL@@[/img][/center]]]
+
+[[[table=3,Delegate, 1]Candidates[c]Votes[c]Elected[/table]]]
+[[[table=3,Vice Delegate, 1]Candidates[c]Votes[c]Elected[/table]]]
+[[[table=3,Speaker, 1]Candidates[c]Votes[c]Elected[/table]]]
+[[[table=3,Court Justice, 1]Candidates[c]Votes[c]Elected[/table]]]
+[[[table=3,Attorney General, 1]Candidates[c]Votes[c]Elected[/table]]]
+
+[[A detailed breakdown of votes and results can be found in [url=@@SpreadsheetLink@@]this spreadsheet[/url].]]
+
+[i]Election Commissioners: @@ElectionCommissioners@@[/i]
+</code></pre>
+
+<p>The results topic should be pinned.</p>
+
+<h2>
+<a id="template-unread-pm" class="anchor" href="#template-unread-pm" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Template unread-PM</h2>
+
+<p>You probably received a link to this manual from a PM which was sent to The Voting Booth by the previous election commission and left unread and unfiled. It is recommended that you send a PM of the same kind to the next Election Commission:</p>
+
+<p><strong>Title</strong>: A note to our successor Election Commission</p>
+
+<p><strong>Body</strong>:</p>
+
+<pre><code>To the next Election Commission,
+
+It has been our experience that the operation of elections in The North Pacific requires great care to avoid being unfair in one direction or another and ensure democracy functions. To assist future Election Commissions in taking such appropriate care, we pass on a set of [url=https://github.com/The-North-Pacific/Election-Templates]Templates[/url] and instructions. We recommend that as your first act, you adopt the protocol that actions following these instructions may be taken by any Election Commissioner individually (to save time) but any deviation from them should be voted on (to reduce the risk of error).
+
+Regards,
+~The Previous Election Commission
+</code></pre>
+
+<p>If any part of this manual did not meet the needs of you or your Election Commission as a whole, please suggest improvements. The canonical way to do so is via a <a href="https://help.github.com/articles/using-pull-requests">pull request</a> but if that's not your piece of cake, just PM one of the people who <em>would</em> do that. Any change requested by an Election Commission will be made.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Election-templates maintained by <a href="https://github.com/The-North-Pacific">The-North-Pacific</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
