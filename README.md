@@ -5,13 +5,13 @@ Templates for TNP Elections
 
 In all the below templates, a word surrounded by double @ signs i.e. @@General@@ is to be substituted as appropriately defined:
 
-1. Type: One of "General Election", "Judicial Election", or "Special @@Position@@ Election.
+1. Type: One of "General Election", "Judicial Election", or "Special @@Position@@ Election".
 2. Position: One of "Delegate", "Vice Delegate", "Speaker", "Justice", or "Attorney General".
 3. Month: the month during which the election begins.
 4. Year: the year during which the election begins.
 5. Label: For a scheduled election, the Month. For a special election, "Special Election".
 6. NextSched: the month of the next scheduled election for the position(s) being elected.
-7. EligibilityDate: the date one must have joined the Regional Assembly / become a Citizen by to be eligible to run in the election (15 days before nominations are opened).
+7. EligibilityDate: the date one must have become a Citizen by to be eligible to run in the election (15 days before nominations are opened).
 8. TermLimitedDelegate: a name or list of names of persons ineligible to run for Delegate due to term limitations.
 9. CandidaciesOpen: the time candidacy declarations open as a UNIX timestamp (number of seconds since January 1st 1970, GMT). Determinable using [a tool](http://www.timestampgenerator.com/).
 10. CandidaciesClose: the time candidacy declarations close as a UNIX timestamp.
@@ -54,11 +54,11 @@ Below is a template which covers these questions:
 
 [img]http://z2.ifrm.com/10711/28/0/p1090273/ec_seal.png[/img][/center]
 
-This @@Label@@, The North Pacific will be electing [[a Delegate,]] [[a]] [[Vice Delegate,]] [[and]] [[Speaker,]] [[#]][[a]] [[Justice]][[s]][[,]] [[and]] [[an Attorney General]] to serve until the next election in [[NextSched]]. Any Citizen who has been a member for the last 15 days (since @@EligibilityDate@@) is eligible to run for these offices [[excepting that @@TermLimitedDelegate@@ is unable to run for Delegate due to term limitations]], and eligible members may run for more than one of these offices if they so wish. Loss of Citizenship before the conclusion of this election will also result in loss of eligibility to run for any office during this election. [[A list of those eligible to run is provided below.]]
+This @@Label@@, The North Pacific will be electing [[a Delegate,]] [[a]] [[Vice Delegate,]] [[Speaker,]] [[,]] [[and]] [[an Attorney General]] [[#]][[a]] [[Justice]][[s]] to serve until the next election in [[NextSched]]. Any Citizen who has been a member for the last 15 days (since @@EligibilityDate@@) is eligible to run for these offices [[excepting that @@TermLimitedDelegate@@ is unable to run for Delegate due to term limitations]], and eligible members may run for more than one of these offices if they so wish. Loss of Citizenship before the conclusion of this election will also result in loss of eligibility to run for any office during this election. [[A list of those eligible to run is provided below.]]
 
 To run, one must either accept a nomination or declare candidacy [u]in this thread[/u]. To withdraw from running, one must post a withdrawal of candidacy in [u]this thread[/u]. 
 
-Acceptances of nominations, declarations of candidacy, and withdrawals of candidacy posted outside this thread will be discounted. Acceptance of a nomination is understood to also constitute declaration of candidacy even if no nomination has been made. Acceptances of nominations, declarations of candidacy, and withdrawals of candidacy must be posted during the candidacy declaration period to be valid. The candidacy declaration period is from (time=@@CandidaciesOpen@@) (your forum time) to (time=@@CandidaciesEnd@@) (your forum time). Voting will be approximately from (time=@@VotingOpen@@) (your forum time) to (time=@@VotingEnd@@) (your forum time).
+Acceptances of nominations, declarations of candidacy, and withdrawals of candidacy posted outside this thread will be discounted. Acceptance of a nomination is understood to also constitute declaration of candidacy even if no nomination has been made. Acceptances of nominations and declarations of candidacy must be posted during the candidacy declaration period to be valid. Withdrawals of candidacy may be posted at any time except during voting. The candidacy declaration period is from (time=@@CandidaciesOpen@@) (your forum time) to (time=@@CandidaciesEnd@@) (your forum time). Voting will be approximately from (time=@@VotingOpen@@) (your forum time) to (time=@@VotingEnd@@) (your forum time).
 
 This topic is intended for nominations, acceptances of nominations, declarations of candidacy, and withdrawals of candidacy; it may not be used for campaigning. Please keep in mind that lying about the election is election fraud, and that lying for any purpose is fraud.
 
@@ -111,15 +111,15 @@ Public Voters must use the following voting form:
 [[[b]Speaker:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Court Justice [[(select up to 3)]]:][/b] < @@Options@@ >]]
+[[[b]Attorney General:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
-[[[b]Attorney General:[/b] < @@Options@@ >]]
+[[[b]Court Justice [[(select up to 3)]]:][/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]][/code]
 
 [[[b][color=red]Abstain is a candidate in this election. If you wish to abstain from voting you must use the option of PRESENT.[/color][/b]]]
 
-Voters may submit their ballots either publicly by a post in this thread, or through personal message to [url=http://forum.thenorthpacific.org/msg/?c=2&mid=197430]The Voting Booth[/url] with a [url=https://www.random.org/integers/?num=1&min=1&max=10000&col=1&base=10&format=html&rnd=new]random[/url] ballot ID number, using the below form. The ballot ID number will be posted together with your vote but with no reference to your identity so that you can verify that we posted your vote and any votes otherwise identical to yours, separately.
+Voters may submit their ballots either publicly by a post in this thread, or through personal message to [[[url=http://forum.thenorthpacific.org/msg/?c=2&mid=197430]The Voting Booth[/url]]] [[[url=http://forum.thenorthpacific.org/msg/?c=2&mid=5013006]The Ballot Box[/url]]] [[[url=http://forum.thenorthpacific.org/msg/?c=2&mid=5013005]The Polling Place[/url]]] with a [url=https://www.random.org/integers/?num=1&min=1&max=10000&col=1&base=10&format=html&rnd=new]random[/url] ballot ID number, using the below form. The ballot ID number will be posted together with your vote but with no reference to your identity so that you can verify that we posted your vote and any votes otherwise identical to yours, separately.
 
 [spoiler=Private voting form][code][b]Ballot ID number:[/b] #
 
@@ -142,7 +142,7 @@ Ballots not submitted according to these guidelines are invalid. Ambiguous votes
 
 [b][color=red]Election Commissioners are required by law to announce private votes in the voting thread, including the candidate(s) the vote was cast for, promptly after those votes are cast. To allow voters to verify their vote is individually counted, the Election Commission will also be including the ballot ID number. For this reason, voters are discouraged from announcing, as was custom, that they have voted privately, as the subsequent public declaration by the Election Commissioners can potentially reveal how they voted.[/color][/b]
 
-Please do not post anything other than your ballot in this thread. If you have any questions please send them directly to [url=http://forum.thenorthpacific.org/msg/?c=2&mid=197430]The Voting Booth[/url] or start a new thread. Additional and unnecessary comments will be removed.
+Please do not post anything other than your ballot in this thread. If you have any questions please send them directly to [[[url=http://forum.thenorthpacific.org/msg/?c=2&mid=197430]The Voting Booth[/url]]] [[[url=http://forum.thenorthpacific.org/msg/?c=2&mid=5013006]The Ballot Box[/url]]] [[[url=http://forum.thenorthpacific.org/msg/?c=2&mid=5013005]The Polling Place[/url]]] or start a new thread. Additional and unnecessary comments will be removed.
 
 [i]Election Commissioners: @@ElectionCommissioners@@[/i]
 ```
@@ -291,8 +291,8 @@ The Election Commission has counted the votes in this @@Type@@ and now publishes
 [[[table=3,Delegate, 1]Candidates[c]Votes[c]Elected[/table]]]
 [[[table=3,Vice Delegate, 1]Candidates[c]Votes[c]Elected[/table]]]
 [[[table=3,Speaker, 1]Candidates[c]Votes[c]Elected[/table]]]
-[[[table=3,Court Justice, 1]Candidates[c]Votes[c]Elected[/table]]]
 [[[table=3,Attorney General, 1]Candidates[c]Votes[c]Elected[/table]]]
+[[[table=3,Court Justice, 1]Candidates[c]Votes[c]Elected[/table]]]
 
 [[A detailed breakdown of votes and results can be found in [url=@@SpreadsheetLink@@]this spreadsheet[/url].]]
 
@@ -300,21 +300,5 @@ The Election Commission has counted the votes in this @@Type@@ and now publishes
 ```
 
 The results topic should be pinned.
-
-## Template unread-PM
-
-You probably received a link to this manual from a PM which was sent to The Voting Booth by the previous election commission and left unread and unfiled. It is recommended that you send a PM of the same kind to the next Election Commission:
-
-**Title**: A note to our successor Election Commission
-
-**Body**:
-```
-To the next Election Commission,
-
-It has been our experience that the operation of elections in The North Pacific requires great care to avoid being unfair in one direction or another and ensure democracy functions. To assist future Election Commissions in taking such appropriate care, we pass on a set of [url=https://github.com/The-North-Pacific/Election-Templates]Templates[/url] and instructions. We recommend that as your first act, you adopt the protocol that actions following these instructions may be taken by any Election Commissioner individually (to save time) but any deviation from them should be voted on (to reduce the risk of error).
-
-Regards,
-~The Previous Election Commission
-```
 
 If any part of this manual did not meet the needs of you or your Election Commission as a whole, please suggest improvements. The canonical way to do so is via a [pull request](https://help.github.com/articles/using-pull-requests) but if that's not your piece of cake, just PM one of the people who _would_ do that. Any change requested by an Election Commission will be made.
