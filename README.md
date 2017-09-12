@@ -138,7 +138,7 @@ Voters may submit their ballots either publicly by a post in this thread, or thr
 [[[b]Attorney General:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]][/code][/spoiler]
 
-Ballots not submitted according to these guidelines are invalid. Ambiguous votes are invalid.
+Ballots not submitted according to these guidelines are invalid. Ambiguous votes are invalid.More information about how irregular ballots are counted can be found in Section Three of the [url=http://forum.thenorthpacific.org/topic/9074497/]Election Commission Rules.[/url]
 
 [b][color=red]Election Commissioners are required by law to announce private votes in the voting thread, including the candidate(s) the vote was cast for, promptly after those votes are cast. To allow voters to verify their vote is individually counted, the Election Commission will also be including the ballot ID number. For this reason, voters are discouraged from announcing, as was custom, that they have voted privately, as the subsequent public declaration by the Election Commissioners can potentially reveal how they voted.[/color][/b]
 
